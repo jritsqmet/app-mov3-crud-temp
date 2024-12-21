@@ -36,6 +36,12 @@ class _CuerpoState extends State<Cuerpo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar( title: Text("FIREBASE CRUD"),),
+      body: Text("Hola"),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.logo_dev), label: "Guardar"),
+        BottomNavigationBarItem(icon: Icon(Icons.list_alt_rounded), label: "Leer"),
+        BottomNavigationBarItem(icon: Icon(Icons.update_sharp), label: "Editar")
+      ]),
     );
   }
 }
